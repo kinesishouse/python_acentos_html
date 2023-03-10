@@ -9,7 +9,7 @@ with open("acv.html", "r") as f:
 soup = BeautifulSoup(contenido_html, "html.parser")
 
 # Lista de etiquetas en las que queremos hacer el cambio selectivo
-etiquetas_seleccionadas = ["p", "h1", "h2"]
+etiquetas_seleccionadas = ["p", "h1", "h2", "h3"]
 
 # Iterar sobre todas las etiquetas seleccionadas
 for etiqueta in soup.find_all(etiquetas_seleccionadas):
